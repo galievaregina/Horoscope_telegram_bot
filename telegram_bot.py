@@ -49,6 +49,8 @@ def func(message):
         bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/aquarius/day/'))
     elif message.text == "Рыбы":
         bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/pisces/day/'))
+    else:
+        bot.send_message(message.chat.id, text="Чтобы получить гороскоп, нажми на кнопку с необходимым знаком зодиака")
 
 
 bot.polling(none_stop=True)
