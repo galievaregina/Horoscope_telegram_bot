@@ -1,5 +1,5 @@
 import telebot
-from downlod_horoscope_from_website import get_horoscope
+from downlod_horoscope_from_website import send_horoscope
 bot = telebot.TeleBot('5798771779:AAHSFF0CQgEHFm4rK_ss1-SmdrkjQzLni6M')
 
 
@@ -25,32 +25,7 @@ def start(message):
 
 @bot.message_handler(content_types=['text'])
 def func(message):
-    if message.text == "Овен":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/aries/day/'))
-    elif message.text == "Телец":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/taurus/day/'))
-    elif message.text == "Близнецы":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/gemini/day/'))
-    elif message.text == "Рак":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/cancer/day/'))
-    elif message.text == "Лев":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/leo/day/'))
-    elif message.text == "Дева":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/virgo/day/'))
-    elif message.text == "Весы":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/libra/day/'))
-    elif message.text == "Скорпион":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/scorpio/day/'))
-    elif message.text == "Стрелец":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/sagittarius/day/'))
-    elif message.text == "Козерог":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/capricorn/day/'))
-    elif message.text == "Водолей":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/aquarius/day/'))
-    elif message.text == "Рыбы":
-        bot.send_message(message.chat.id, text=get_horoscope('https://www.elle.ru/astro/pisces/day/'))
-    else:
-        bot.send_message(message.chat.id, text="Чтобы получить гороскоп, нажми на кнопку с необходимым знаком зодиака")
+    bot.send_message(message.chat.id, text=send_horoscope(message.text))
 
 
 bot.polling(none_stop=True)
