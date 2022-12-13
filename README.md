@@ -7,6 +7,12 @@
 `docker pull galievaregina/telegram_bot`
 2. Запустить Docker container\
 `docker run galievaregina/telegram_bot`
+
+## Тесты
+
+- main [![Horoscope Telegram bot CI](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml/badge.svg?branch=main)](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml)
+
+- develop [![Horoscope Telegram bot CI](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml/badge.svg?branch=dev)](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml)
 ## Примеры использования
 1. После нажатия кнопки "Начать", телеграм бот отправляет сообщение "Привет! Выбери знак зодиака", и на клавиатуре появляются кнопки с двенадцатью знаками зодиака.
 <img src="examples/image1.jpg" width=25% height=25%>
