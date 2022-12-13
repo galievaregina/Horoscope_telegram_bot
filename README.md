@@ -1,6 +1,12 @@
 # Horoscope telegram bot
 ## Описание 
 Телеграм бот, отправляет по запросу пользователя гороскоп на текущий день для выбранного знака зодиака 
+## Тесты
+
+- main [![Horoscope Telegram bot CI](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml/badge.svg?branch=main)](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml)
+
+- develop [![Horoscope Telegram bot CI](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml/badge.svg?branch=develop)](https://github.com/galievaregina/Horoscope_telegram_bot/actions/workflows/telegram_bot.yml)
+
 ## Запуск
 ### Docker
 1. Скачать image проекта\
