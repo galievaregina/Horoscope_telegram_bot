@@ -1,6 +1,6 @@
 import telebot
 from downlod_horoscope_from_website import send_horoscope
-bot = telebot.TeleBot('5798771779:AAHSFF0CQgEHFm4rK_ss1-SmdrkjQzLni6M')
+bot = telebot.TeleBot('TOKEN')
 
 
 @bot.message_handler(commands=['start'])
